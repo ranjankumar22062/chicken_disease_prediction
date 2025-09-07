@@ -13,9 +13,9 @@ logging.basicConfig(
     format=logging_str,
     handlers=[
         logging.FileHandler(log_filepath),
-        logging.streamhandler(sys.stdout)
+        logging.StreamHandler(sys.stdout)
 
 
     ]
 )
-logger=logging.getlogger("cnnclassifierlogger")
+logger=logging.getLogger("cnnClassifierlogger")
